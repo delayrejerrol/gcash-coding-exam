@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_home"
+    app:startDestination="@id/mainWeatherFragment">
+
+    <fragment
+        android:id="@+id/mainWeatherFragment"
+        android:name="com.jnda.home.view.MainWeatherFragment"
+        android:label="MainWeatherFragment"
+        tools:layout="@layout/fragment_main_weather">
+        <deepLink app:uri="@string/deeplink_main_weather" />
+    </fragment>
+    <fragment
+        android:id="@+id/weatherListFragment"
+        android:name="com.jnda.home.view.WeatherListFragment"
+        android:label="WeatherListFragment"
+        tools:layout="@layout/fragment_weather_list">
+        <deepLink app:uri="@string/deeplink_weather_list" />
+    </fragment>
+</navigation>

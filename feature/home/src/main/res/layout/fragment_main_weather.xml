@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.jnda.common.view.widget.CustomTextView
+        android:id="@+id/customTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="My Location"
+        android:textSize="24sp"
+        app:customTextColor="@color/c_FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.jnda.common.view.widget.CustomTextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textSize="18sp"
+        app:customFontWeight="medium"
+        app:customTextColor="@color/c_FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customTextView"
+        tools:text="Caloocan City, PH" />
+
+    <ImageView
+        android:id="@+id/iv_refresh"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/baseline_refresh_24"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_location"
+        app:layout_constraintStart_toStartOf="@+id/tv_location"
+        app:layout_constraintTop_toBottomOf="@+id/tv_location" />
+
+    <com.jnda.common.view.widget.CustomTextView
+        android:id="@+id/tv_weather_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="70sp"
+        android:layout_marginTop="16dp"
+        app:customFontWeight="bold"
+        app:customTextColor="@color/c_FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_refresh"
+        tools:text="30°" />
+
+    <ImageView
+        android:id="@+id/iv_main_weather"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_weather_temp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="182dp"
+        android:layout_height="65dp"
+        android:background="@drawable/bg_r8_a4a7f1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_main_weather">
+
+        <com.jnda.common.view.widget.CustomTextView
+            android:id="@+id/tv_sunrise_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:customFontWeight="medium"
+            app:customTextColor="@color/c_000000"
+            app:layout_constraintStart_toStartOf="@+id/customTextView2"
+            app:layout_constraintTop_toBottomOf="@+id/customTextView2"
+            tools:text="5:30 PM" />
+
+        <ImageView
+            android:id="@+id/iv_sunrise"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/sunrise"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.jnda.common.view.widget.CustomTextView
+            android:id="@+id/customTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:text="Sunrise"
+            android:textSize="12sp"
+            android:layout_marginTop="4dp"
+            app:customTextColor="@color/c_000000"
+            app:layout_constraintStart_toEndOf="@+id/iv_sunrise"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="182dp"
+        android:layout_height="65dp"
+        android:background="@drawable/bg_r8_a4a7f1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout2">
+
+        <com.jnda.common.view.widget.CustomTextView
+            android:id="@+id/tv_sunset_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:customTextColor="@color/c_000000"
+            app:customFontWeight="medium"
+            app:layout_constraintStart_toStartOf="@+id/customTextView3"
+            app:layout_constraintTop_toBottomOf="@+id/customTextView3"
+            tools:text="5:30 PM" />
+
+        <ImageView
+            android:id="@+id/iv_sunset"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/sunset"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.jnda.common.view.widget.CustomTextView
+            android:id="@+id/customTextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sunset"
+            android:textSize="12sp"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="13dp"
+            app:customTextColor="@color/c_000000"
+            app:layout_constraintStart_toEndOf="@+id/iv_sunset"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

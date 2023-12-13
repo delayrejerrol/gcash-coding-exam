@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="customTextColor" format="color" />
+    <attr name="customFontWeight" format="enum">
+        <enum name="regular" value="400" />
+        <enum name="medium" value="500" />
+        <enum name="bold" value="700"/>
+    </attr>
+
+    <declare-styleable name="CustomEditText">
+        <attr name="customHeaderText" format="string" />
+        <attr name="customPlaceholder" format="string" />
+        <attr name="customInputType" format="enum">
+            <enum name="text" value="1" />
+            <enum name="password" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CustomTextView">
+        <attr name="customFontWeight" />
+        <attr name="customTextColor" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomButton">
+        <attr name="customFontWeight" />
+        <attr name="customTextColor" />
+        <attr name="customButtonState" format="enum">
+            <enum name="disabled" value="0" />
+            <enum name="enabled" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>

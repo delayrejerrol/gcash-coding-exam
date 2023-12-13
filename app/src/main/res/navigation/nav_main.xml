@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/signInFragment">
+
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.jnda.signin.view.SignInFragment"
+        android:label="SignInFragment"
+        tools:layout="@layout/fragment_sign_in" >
+        <deepLink app:uri="@string/deeplink_sign_in" />
+        <action
+            android:id="@+id/action_signInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_signInFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.jnda.signup.view.SignUpFragment"
+        android:label="SignUpFragment"
+        tools:layout="@layout/fragment_sign_up">
+        <deepLink app:uri="@string/deeplink_sign_up" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.jnda.home.view.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <deepLink app:uri="@string/deeplink_home" />
+    </fragment>
+</navigation>

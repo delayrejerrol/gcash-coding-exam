@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="deeplink_sign_in">weatherapp://sign-in</string>
+    <string name="deeplink_sign_up">weatherapp://sign-up</string>
+    <string name="deeplink_home">weatherapp://home</string>
+    <string name="deeplink_main_weather">weatherapp://main-weather</string>
+    <string name="deeplink_weather_list">weatherapp://weather-list</string>
+</resources>
